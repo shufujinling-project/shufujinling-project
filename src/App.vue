@@ -1,40 +1,33 @@
 <template>
-    <v-chart class="chart" :option="option" autoresize />
+  <main class="layout">
+    <div class="grid">
+      <div class="cell"><StackedLineChart01 /></div>
+    </div>
+  </main>
 </template>
 
 <script setup>
-import { use } from 'echarts/core'
-import { LineChart } from 'echarts/charts'
-import { GridComponent } from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
+import '@/styles/reset.css';
+import StackedLineChart01 from '@/charts/StackedLineChart01.vue';
 
-use([GridComponent, LineChart, CanvasRenderer])
-
-import VChart, { THEME_KEY } from 'vue-echarts';
-import { ref, provide } from 'vue';
-
-provide(THEME_KEY, 'dark');
-
-const option = ref({
-  xAxis: {
-    type: 'category',
-    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  },
-  yAxis: {
-    type: 'value'
-  },
-  series: [
-    {
-      data: [150, 230, 224, 218, 135, 147, 260],
-      type: 'line'
-    }
-  ]
-});
 
 </script>
 
 <style scoped>
-.chart {
+.layout{
+  background-color: black;
   height: 100vh;
+  width: 100vw;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:    repeat(3, 1fr);
+  gap: 16px;
+  height: 100%;
+}
+.cell{
+  min-height: 0;
+  min-width:  0;
 }
 </style>
