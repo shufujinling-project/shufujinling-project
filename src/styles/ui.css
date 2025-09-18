@@ -1,0 +1,22 @@
+/* 菜单按钮 */
+.menu button {
+  position: relative;
+  border: none;
+  padding: 14px 20px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #077aa0;
+}
+.menu button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  /* 如果想更亮，可以把渐变再调浅 10% */
+  filter: brightness(1.1);
+}
+/* 激活态 */
+.menu button.active {
+  box-shadow: 0 0 14px 4px rgb(0, 179, 255);
+}

@@ -1,33 +1,78 @@
 <template>
-  <main class="layout">
-    <div class="grid">
-      <div class="cell"><StackedLineChart01 /></div>
+  <div class="layout">
+    <div class="sidebar">
+      <div class="wrapper">
+        <div class="menu">
+          <button v-for="value in memuBtn" :key="value.name" :class="{ active: currentPage === value.name }" @click="() => {current = value.page; currentPage = value.name}">{{ value.name }}</button>
+        </div>
+      </div>
     </div>
-  </main>
+    <div class="main">
+      <Transition name="fade" mode="out-in">
+        <component :is="current"/>
+      </Transition>
+    </div>
+  </div>
 </template>
 
 <script setup>
 import '@/styles/reset.css';
-import StackedLineChart01 from '@/charts/StackedLineChart01.vue';
+import '@/styles/ui.css';
+import { shallowRef, ref } from 'vue'
 
+import Page01 from '@/pages/Page01.vue'
+import Page02 from '@/pages/Page02.vue'
 
+const current = shallowRef(Page01)
+const currentPage = ref("Page01")
+
+const memuBtn = [
+  {
+    name: "页面一",
+    page: Page01
+  },
+  {
+    name: "页面二",
+    page: Page02
+  }
+]
 </script>
 
 <style scoped>
 .layout{
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
-}
-.grid{
+  background-color: #100C2A;
+  height: 100%;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:    repeat(3, 1fr);
-  gap: 16px;
+  grid-template-areas:
+    "sidebar main";
+  grid-template-columns: 10vw 1fr;
+  grid-template-rows: 1fr;
+}
+.sidebar {
+  grid-area: sidebar;
+  padding-top: 20px;
+  padding-right: 16px;
+}
+.sidebar .wrapper {
   height: 100%;
 }
-.cell{
-  min-height: 0;
-  min-width:  0;
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main {
+  grid-area: main;
+  /* padding: 20px; */
+}
+/* 页面切换淡入淡出效果 */
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
 }
 </style>

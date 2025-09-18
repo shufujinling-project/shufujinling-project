@@ -1,30 +1,16 @@
 <template>
-    <div class="container">
-        <v-chart class="chart" :option="option" autoresize />
-    </div>
+  <div class="container">
+    <v-chart class="chart" :option="option" autoresize />
+  </div>
 </template>
 
 <script setup>
 import { use } from 'echarts/core'
-import { LineChart } from 'echarts/charts'
-import {
-  TitleComponent,
-  TooltipComponent,
-  LegendComponent,
-  ToolboxComponent,
-  GridComponent
-} from 'echarts/components'
+import { PieChart } from 'echarts/charts'
+import { TooltipComponent, LegendComponent } from 'echarts/components'
 import { CanvasRenderer } from 'echarts/renderers'
 
-use([
-  TitleComponent,
-  TooltipComponent,
-  LegendComponent,
-  ToolboxComponent,
-  GridComponent,
-  LineChart,
-  CanvasRenderer
-])
+use([TooltipComponent, LegendComponent, PieChart, CanvasRenderer])
 
 import VChart, { THEME_KEY } from 'vue-echarts';
 import { ref, provide } from 'vue';
@@ -33,6 +19,10 @@ provide(THEME_KEY, 'dark');
 
 import { readTextFile } from '@/api/file';
 
+const props = defineProps({
+  optionfile: { type: String, required: true }
+})
+
 const option = ref();
 async function loadFile(fileName) {
   const { data } = await readTextFile(fileName)
@@ -40,7 +30,7 @@ async function loadFile(fileName) {
   option.value = obj
 }
 
-loadFile("StackedLineChart01.json")
+loadFile(props.optionfile)
 
 </script>
 
@@ -51,6 +41,8 @@ loadFile("StackedLineChart01.json")
   display: flex;
 }
 .chart {
+  min-height: 0;
+  min-width: 0;
   height: 100%;
   width: 100%;
   display: flex;
