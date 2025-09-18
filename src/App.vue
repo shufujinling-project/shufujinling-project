@@ -1,4 +1,5 @@
 <template>
+  <!-- <VScaleScreen> -->
   <div class="layout">
     <div class="sidebar">
       <div class="wrapper">
@@ -13,12 +14,14 @@
       </Transition>
     </div>
   </div>
+  <!-- </VScaleScreen> -->
 </template>
 
 <script setup>
 import '@/styles/reset.css';
 import '@/styles/ui.css';
 import { shallowRef, ref } from 'vue'
+import VScaleScreen from 'v-scale-screen'
 
 import Page01 from '@/pages/Page01.vue'
 import Page02 from '@/pages/Page02.vue'
@@ -42,6 +45,7 @@ const memuBtn = [
 .layout{
   background-color: #100C2A;
   height: 100%;
+  width: 100%;
   margin: 0;
   display: grid;
   grid-template-areas:

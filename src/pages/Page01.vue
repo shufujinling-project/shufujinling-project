@@ -1,11 +1,11 @@
 <template>
 <div class="wrapper">
   <div class="head">
-    <!-- <DvBorderBox7> -->
+    <DvBorderBox7>
       <div class="text-wrapper">
         南京市智慧经济发展状况
       </div>
-    <!-- </DvBorderBox7> -->
+    </DvBorderBox7>
   </div>
   <div class="grid">
     <div class="col1">
@@ -55,7 +55,7 @@
       </DvBorderBox12>
       <DvBorderBox12>
         <ImageText image="https://img95.699pic.com/video_cover/19/55/64/b_I1a4e6kybQ2i1641195564.jpg!/fw/820" title="航空港2023年吞吐量" text=""/>
-      </DvBorderBox12>  
+      </DvBorderBox12>
     </div>
   </div>
 </div>
@@ -78,12 +78,11 @@ import ImageText from '@/charts/ImageText.vue';
 
 <style scoped>
 .wrapper {
-  /* background-color: yellow; */
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   box-sizing: border-box;
   gap: 16px;
 }
@@ -108,8 +107,9 @@ import ImageText from '@/charts/ImageText.vue';
     "col1 col2 col3"
     "col1 footer col3";
   grid-template-columns: 28% 42% 28%;
-  grid-template-rows: 67% 1fr;
+  grid-template-rows: 2fr 1fr;
   gap: 16px;
+  min-height:0;
 }
 .grid .col1 {
   grid-area: col1;
@@ -132,14 +132,12 @@ import ImageText from '@/charts/ImageText.vue';
 }
 .grid .footer {
   grid-area: footer;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex: 1;
 }
-
 .grid .cell{
   /* background-color: yellow; */
   min-height: 0;
-  min-width:  0;
   width: 100%;
   height: 100%;
   padding: 20px;
