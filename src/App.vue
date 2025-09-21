@@ -70,7 +70,7 @@ const memuBtn = [
 ]
 
 const btnTexture = computed(() => (name) => ({
-  background: `url(/src/assets/buttons/${name}.png) center/cover no-repeat`
+  background: `url('/buttons/${name}.png') center/cover no-repeat`
 }))
 </script>
 
