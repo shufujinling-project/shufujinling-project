@@ -1,0 +1,49 @@
+{
+  "title": {
+    "text": "“随手拍”平台(截至2024年)",
+    "top": 10,
+    "left": "center",
+    "subtext": "总稿件24万，形成7765笔工单"
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "item"
+  },
+  "legend": {
+    "orient": "vertical",
+    "left": "left"
+  },
+  "series": [
+    {
+        "name": "Access From",
+        "type": "pie",
+        "radius": "50%",
+        "center": ["50%", "65%"], 
+        "data": [
+          {
+            "name": "道路设置类",
+            "value": 3385
+          },
+          {
+            "name": "市容管理类",
+            "value": 2873
+          },
+          {
+            "name": "突发事件类",
+            "value": 975
+          },
+          {
+            "name": "公用设施类",
+            "value": 226
+          }
+        ],
+        "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 10,
+          "shadowOffsetX": 0,
+          "shadowColor": "rgba(0, 0, 0, 0.5)"
+        }
+      }
+    }
+  ]
+}

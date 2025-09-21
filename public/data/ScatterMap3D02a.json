@@ -1,0 +1,181 @@
+{
+  "title": {
+    "text": "南京市政务和应急服务中心地理位置分布",
+    "top": 20,
+    "left": 20
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "formatter": "{b}"
+  },
+  "legend": {
+    "data": [
+      {
+        "name": "政务",
+        "icon": "circle"
+      },
+      {
+        "name": "应急",
+        "icon": "circle"
+      }
+    ],
+    "textStyle": {
+      "color": "#fff"
+    },
+    "left": 30,
+    "top": 80
+  },
+  "geo": [
+    {
+      "layoutCenter": ["50%", "50%"],
+      "layoutSize": "160%",
+      "map": "nanjing",
+      "roam": false,
+      "zoom": 0.5,
+      "aspectScale": 1.2,
+      "label": { "color": "#fff", "show": false },
+      "itemStyle": {
+        "areaColor": { "type": "linear", "x": 1200, "y": 0, "x2": 0, "y2": 0, "colorStops": [{ "offset": 0, "color": "rgba(3,27,78,0.75)" }, { "offset": 1, "color": "rgba(58,149,253,0.75)" }], "global": true },
+        "borderColor": "#c0f3fb",
+        "borderWidth": 1,
+        "shadowColor": "#8cd3ef",
+        "shadowOffsetY": 10,
+        "shadowBlur": 30
+      },
+      "emphasis": {
+        "itemStyle": {
+          "areaColor": "rgba(255,255,255,0.8)"
+        },
+        "label": {
+          "show": true, "color": "#000"
+        }
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -1,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "51%"],
+      "layoutSize": "160%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.8)",
+        "shadowColor": "rgba(172, 122, 255,0.5)",
+        "shadowOffsetY": 5,
+        "shadowBlur": 15,
+        "areaColor": "rgba(5,21,35,0.1)"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -2,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "52%"],
+      "layoutSize": "160%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.6)",
+        "shadowColor": "rgba(65, 214, 255,1)",
+        "shadowOffsetY": 5,
+        "shadowBlur": 15,
+        "areaColor": "transparent"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -3,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "53%"],
+      "layoutSize": "160%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.4)",
+        "shadowColor": "rgba(58,149,253,1)",
+        "shadowOffsetY": 15,
+        "shadowBlur": 10,
+        "areaColor": "transparent"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -4,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "54%"],
+      "layoutSize": "160%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 5,
+        "borderColor": "rgba(5,9,57,0.8)",
+        "shadowColor": "rgba(29, 111, 165,0.8)",
+        "shadowOffsetY": 15,
+        "shadowBlur": 10,
+        "areaColor": "rgba(5,21,35,0.1)"
+      }
+    }
+  ],
+  "series": [
+    {
+      "type": "map",
+      "map": "nanjing",
+      "geoIndex": 0,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "showLegendSymbol": true,
+      "roam": true,
+      "label": {
+        "show": true,
+        "color": "#fff",
+        "fontSize": "120%"
+      },
+      "itemStyle": {
+        "areaColor": { "type": "linear", "x": 1200, "y": 0, "x2": 0, "y2": 0, "colorStops": [{ "offset": 0, "color": "rgba(3,27,78,0.75)" }, { "offset": 1, "color": "rgba(58,149,253,0.75)" }], "global": true },
+        "borderColor": "#fff",
+        "borderWidth": 0.2
+      },
+      "layoutCenter": ["50%", "50%"],
+      "layoutSize": "160%",
+      "animation": false
+    },    
+    {
+      "name": "应急",
+      "type": "effectScatter",
+      "coordinateSystem": "geo",
+      "showEffectOn": "render",
+      "rippleEffect": { "scale": 5, "brushType": "stroke" },
+      "label": { "formatter": "{b}", "position": "bottom", "show": false, "color": "#fff", "distance": 10 },
+      "symbol": "circle",
+      "symbolSize": [20, 10],
+      "itemStyle": {  "color": "#16ffff", "shadowBlur": 10, "shadowColor": "#16ffff", "opacity": 1 },
+      "zlevel": 4,
+      "data": [{"name": "南京市突发公共卫生事件应急指挥中心", "value": [118.783089, 32.013954]}, {"name": "秦淮区突发公共卫生事件应急中心", "value": [118.768651, 32.039864]}, {"name": "南京市地质灾害应急地质环境保护技术中心", "value": [118.734106, 31.971443]}, {"name": "南京市城建市政城市道路桥梁应急抢险中心", "value": [118.767285, 31.987785]}, {"name": "南京南站地区环境卫生保障应急处置中心", "value": [118.787899, 31.972393]}, {"name": "南京市公路管理处公路养护应急处置中心", "value": [118.788013, 32.291071]}, {"name": "玄武区突发公共卫生事件应急处置中心", "value": [118.819043, 32.049706]}, {"name": "南京市环境监测监控应急中心", "value": [118.711206, 31.970565]}, {"name": "南京粮食应急保供中心", "value": [118.860667, 32.141995]}, {"name": "江苏省核应急指挥中心", "value": [118.721268, 32.021967]}, {"name": "玄武区公共卫生应急处置中心", "value": [118.816954, 32.04839]}, {"name": "应急管理消防一体化智慧消防联动中心", "value": [118.778379, 31.973554]}, {"name": "卫生应急指挥中心检验中心", "value": [118.858866, 31.962357]}, {"name": "秦淮区柏果树2号秦淮区突发公共卫生事件应急中心", "value": [118.768651, 32.039864]}, {"name": "雨花台区安全生产应急救援中心", "value": [118.774217, 31.992767]}, {"name": "雨花台区突发公共卫生事件应急中心", "value": [118.779377, 32.005059]}, {"name": "南京市公路管理处公路养护应急处置中心", "value": [118.788013, 32.291071]}, {"name": "国际应急中心华东指挥中心江苏总队", "value": [118.601452, 31.994086]}, {"name": "新街口片区道路管养应急中心秦淮区城市管理局", "value": [118.77871, 32.031202]}, {"name": "江苏省电梯应急处置服务数据中心", "value": [118.667316, 32.077018]}, {"name": "高淳区综合应急救援中心暨开发区消防站", "value": [118.932889, 31.353335]}, {"name": "高淳区综合应急救援中心暨开发区消防站", "value": [118.932889, 31.353335]}, {"name": "南京市栖霞区应急管理局", "value": [118.88034, 32.11479]}, {"name": "南京经济技术开发区应急管理局", "value": [118.869937, 32.16359]}, {"name": "南京市江宁区应急管理局", "value": [118.849151, 31.953364]}, {"name": "南京市应急管理局", "value": [118.785437, 32.056729]}, {"name": "南京市雨花台区应急管理局", "value": [118.773181, 31.987679]}, {"name": "南京市浦口区应急管理局", "value": [118.60693, 32.026199]}, {"name": "南京市溧水区应急管理局", "value": [119.03564, 31.658728]}, {"name": "南京市秦淮区应急管理局", "value": [118.798678, 32.01165]}, {"name": "鼓楼区应急管理局", "value": [118.770723, 32.067175]}, {"name": "玄武区应急管理局", "value": [118.797966, 32.048387]}, {"name": "南京市高淳区应急管理局", "value": [118.877018, 31.330169]}, {"name": "南京江北新区应急管理综合行政执法大队", "value": [118.788127, 32.28314]}]
+    },
+    {
+      "name": "政务",
+      "type": "effectScatter",
+      "coordinateSystem": "geo",
+      "showEffectOn": "render",
+      "rippleEffect": { "scale": 5, "brushType": "stroke" },
+      "label": { "formatter": "{b}", "position": "bottom", "show": false, "color": "#fff", "distance": 10 },
+      "symbol": "circle",
+      "symbolSize": [20, 10],
+      "itemStyle": {  "color": "#00ff00", "shadowBlur": 10, "shadowColor": "#00ff00", "opacity": 1 },
+      "zlevel": 4,
+      "data": [{"name": "南京市政务服务中心", "value": [118.731042, 32.005049]}, {"name": "雨花台区政务服务中心", "value": [118.779483, 31.98005]}, {"name": "建邺区政务服务中心", "value": [118.719327, 31.98386]}, {"name": "江苏省政务服务中心", "value": [118.749341, 32.038171]}, {"name": "南京市鼓楼区政务服务中心", "value": [118.743178, 32.08753]}, {"name": "南京市溧水区政务服务中心", "value": [119.046405, 31.636918]}, {"name": "南京市江北新区政务服务中心", "value": [118.699925, 32.079167]}, {"name": "南京市住房保障中心政务服务中心", "value": [118.780983, 32.036098]}, {"name": "南京市浦口区政务服务中心", "value": [118.627238, 32.06669]}, {"name": "栖霞区政务服务中心", "value": [118.929636, 32.104003]}, {"name": "玄武区政务服务中心", "value": [118.797719, 32.048496]}, {"name": "江宁政务服务中心", "value": [118.836405, 31.939964]}, {"name": "秦淮区政务服务中心", "value": [118.794529, 32.03909]}, {"name": "江宁开发区政务服务中心", "value": [118.804107, 31.943487]}, {"name": "高淳区政务大厅", "value": [118.90949, 31.321]}, {"name": "南京市六合区市民中心", "value": [118.834245, 32.329102]}, {"name": "栖霞区政务服务中心户外劳动者爱心驿站", "value": [118.929714, 32.103595]}, {"name": "顶山街道便民服务中心24小时自助服务区", "value": [118.686461, 32.102305]}, {"name": "吉庆社区24小时自助政务服务站", "value": [118.755891, 32.017593]}, {"name": "庐山社区24小时自助政务服务站", "value": [118.736815, 32.010951]}, {"name": "话园社区24小时自助政务服务站", "value": [118.756992, 32.020406]}, {"name": "兴隆街道24小时自助政务服务", "value": [118.726883, 32.018703]}, {"name": "汤泉街道便民服务中心24小时自助政务服务", "value": [118.51662, 32.097921]}]
+    }    
+  ]
+}

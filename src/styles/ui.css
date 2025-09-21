@@ -8,7 +8,8 @@
   cursor: pointer;
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
-  background-color: #077aa0;
+  width: 160px;
+  height: 48px;
 }
 .menu button:hover {
   transform: translateY(-2px);
@@ -19,4 +20,17 @@
 /* 激活态 */
 .menu button.active {
   box-shadow: 0 0 14px 4px rgb(0, 179, 255);
+}
+
+/* 标题文字 */
+.simple-title {
+  color:#fff;
+  font-size:24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* 图片标题样式 */
+.simple-img-title {
+  height: 200px;
 }

@@ -1,0 +1,120 @@
+{
+  "title": {
+    "text": "固定电话与移动电话用户数量对比",
+    "top": 10,
+    "left": "center",
+    "textStyle": {
+      "fontSize": 20,
+      "color": "#fff",
+      "textShadowColor": "rgba(0,0,0,0.5)",
+      "textShadowBlur": 6
+    }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#3498db",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "grid": {
+    "left": "3%",
+    "right": "10%",
+    "bottom": "3%",
+    "top": "30%",
+    "containLabel": true
+  },
+  "toolbox": {
+    "feature": { "saveAsImage": {} }
+  },
+  "xAxis": {
+    "type": "category",
+    "name": "年份",
+    "boundaryGap": false,
+    "data": ["2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],
+    "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisTick": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisLabel": { "color": "rgba(255,255,255,0.8)" }
+  },
+  "yAxis": {
+    "type": "value",
+    "name": "用户数",
+    "axisLine": { "show": false },
+    "axisTick": { "show": false },
+    "splitLine": { "lineStyle": { "color": "rgba(255,255,255,0.1)" } },
+    "axisLabel": { "color": "rgba(255,255,255,0.8)" }
+  },
+  "series": [
+    {
+      "name": "固定电话用户(万户)",
+      "type": "line",
+      "data": [282.52,279.71,243.5,217.93,201.17,181.91,171.85,155.9,141.3,126.7],
+      "smooth": true,
+      "symbol": "circle",
+      "symbolSize": 8,
+      "lineStyle": {
+        "width": 4,
+        "color": {
+          "type": "linear",
+          "x": 0,"y": 0,"x2": 1,"y2": 0,
+          "colorStops": [
+            {"offset": 0,"color": "#ff7eb3"},
+            {"offset": 1,"color": "#ff8c00"}
+          ]
+        },
+        "shadowBlur": 12,
+        "shadowColor": "rgba(255,126,179,0.6)"
+      },
+      "areaStyle": {
+        "color": {
+          "type": "linear",
+          "x": 0,"y": 0,"x2": 0,"y2": 1,
+          "colorStops": [
+            {"offset": 0,"color": "rgba(255,126,179,0.35)"},
+            {"offset": 1,"color": "rgba(255,126,179,0.01)"}
+          ]
+        }
+      },
+      "itemStyle": {"color": "#ff7eb3","borderColor": "#fff","borderWidth": 2},
+      "emphasis": {"scale": 1.6,"itemStyle": {"borderWidth": 3,"shadowBlur": 20,"shadowColor": "rgba(255,126,179,0.8)"}},
+      "animationDuration": 2000,
+      "animationEasing": "cubicOut"
+    },
+    {
+      "name": "移动电话用户(万户)",
+      "type": "line",
+      "data": [1042.44,1082.17,1114.72,1124.42,1284.06,1307.86,1263.81,1340.8,1354.1,1422.3],
+      "smooth": true,
+      "symbol": "circle",
+      "symbolSize": 8,
+      "lineStyle": {
+        "width": 4,
+        "color": {
+          "type": "linear",
+          "x": 0,"y": 0,"x2": 1,"y2": 0,
+          "colorStops": [
+            {"offset": 0,"color": "#06d6a0"},
+            {"offset": 1,"color": "#2ec4b6"}
+          ]
+        },
+        "shadowBlur": 12,
+        "shadowColor": "rgba(6,214,160,0.6)"
+      },
+      "areaStyle": {
+        "color": {
+          "type": "linear",
+          "x": 0,"y": 0,"x2": 0,"y2": 1,
+          "colorStops": [
+            {"offset": 0,"color": "rgba(6,214,160,0.35)"},
+            {"offset": 1,"color": "rgba(6,214,160,0.01)"}
+          ]
+        }
+      },
+      "itemStyle": {"color": "#06d6a0","borderColor": "#fff","borderWidth": 2},
+      "emphasis": {"scale": 1.6,"itemStyle": {"borderWidth": 3,"shadowBlur": 20,"shadowColor": "rgba(6,214,160,0.8)"}},
+      "animationDuration": 2000,
+      "animationEasing": "cubicOut"
+    }
+  ]
+}

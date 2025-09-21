@@ -1,0 +1,71 @@
+{
+  "title": {
+    "text": "关键词排行",
+    "top": 10,
+    "right": "center"
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "grid": {
+    "left": 70,
+    "right": 30,
+    "top": 40,
+    "bottom": 20
+  },
+  "legend": {
+    "orient": "vertical",
+    "right": 5,     
+    "top": 10    
+  },
+  "xAxis": {
+    "type": "value",
+    "boundaryGap": [
+      0,
+      0.01
+    ]
+  },
+  "yAxis": {
+    "type": "category",
+    "data": ["{top1|发展}","{top2|城市}","{top3|智慧}","建设","南京","信息化","南京市","关于","规划","应用","信息","推进","融合","实现","信息技术"],
+    "inverse": true,
+    "axisLabel": {
+      "fontSize": 14,
+      "rich": {
+      "top1": { "fontSize": 18, "color": "#fd6", "fontWeight": "bold" },
+      "top2": { "fontSize": 16, "color": "#fd6", "fontWeight": "bold" },
+      "top3": { "fontSize": 15, "color": "#fd6", "fontWeight": "bold" } 
+    }    
+    }
+  },
+  "series": [
+    {
+      "name": "",
+      "type": "bar",
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        { "value": 77, "itemStyle": { "color": "#EF476F" }},
+        { "value": 70, "itemStyle": { "color": "#FFD166" }},
+        { "value": 67, "itemStyle": { "color": "#06D6A0" }},
+        { "value": 47, "itemStyle": { "color": "#118AB2" }},
+        { "value": 41, "itemStyle": { "color": "#118AB2" }},
+        { "value": 36, "itemStyle": { "color": "#118AB2" }},
+        { "value": 27, "itemStyle": { "color": "#118AB2" }},
+        { "value": 22, "itemStyle": { "color": "#118AB2" }},
+        { "value": 21, "itemStyle": { "color": "#118AB2" }},
+        { "value": 18, "itemStyle": { "color": "#118AB2" }},
+        { "value": 18, "itemStyle": { "color": "#118AB2" }},
+        { "value": 17, "itemStyle": { "color": "#118AB2" }},
+        { "value": 17, "itemStyle": { "color": "#118AB2" }},
+        { "value": 16, "itemStyle": { "color": "#118AB2" }},
+        { "value": 14, "itemStyle": { "color": "#118AB2" }}
+      ]
+    }
+  ]
+}

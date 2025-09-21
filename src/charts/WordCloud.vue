@@ -22,7 +22,14 @@ const option = ref();
 async function loadFile(fileName) {
   const { data } = await readTextFile(fileName)
   const obj = JSON.parse(data.content)
+  const colors = [
+    '#EF476F', '#FF8C42', '#FFD166',
+    '#06D6A0', '#11BAC2', '#fff',
+    '#aaa'                           
+];
+  obj.series[0].textStyle = {"color": v => `${colors[v.dataIndex % colors.length]}`}
   option.value = obj
+  console.log(option.value)
 }
 
 loadFile(props.optionfile)

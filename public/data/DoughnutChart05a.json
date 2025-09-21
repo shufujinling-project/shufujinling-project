@@ -1,0 +1,63 @@
+{
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "title": {
+    "text": "水质检测站",
+    "subtext": "总数31个",
+    "left": "center",
+    "top": "center",
+    "textStyle": { "fontSize": 20, "color": "#fff" },
+    "subtextStyle": { "fontSize": 14, "color": "rgba(255,255,255,0.8)" }
+  },
+  "tooltip": {
+    "trigger": "item",
+    "backgroundColor": "rgba(0,0,0,0.75)",
+    "borderColor": "#06D6A0",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" },
+    "formatter": "{a}<br/>{b}: {c} 个 ({d}%)"
+  },
+  "legend": {
+    "bottom": 20,
+    "left": "center",
+    "itemWidth": 14,
+    "itemHeight": 14,
+    "textStyle": { "color": "#fff" },
+    "data": [
+      {
+        "name": "自动水质监测站",
+        "icon": "circle",
+        "itemStyle": { "color": "#06D6A0" }
+      }
+    ]
+  },
+  "series": [
+    {
+      "name": "水质监测站",
+      "type": "pie",
+      "radius": ["25%", "50%"],
+      "center": ["50%", "50%"],
+      "avoidLabelOverlap": false,
+      "label": { "show": false },
+      "labelLine": { "show": false },
+      "itemStyle": {
+        "borderRadius": 6,
+        "borderColor": "#fff",
+        "borderWidth": 2
+      },
+      "data": [
+        { "name": "自动水质监测站", "value": 7, "itemStyle": { "color": "#06D6A0" } },
+        { "name": "其余水质监测站", "value": 24, "itemStyle": { "color": "rgba(0,100,255,0.2)" } }
+      ],
+      "emphasis": {
+        "scale": 1.08,
+        "itemStyle": {
+          "shadowBlur": 16,
+          "shadowColor": "rgba(0,0,0,0.4)"
+        }
+      },
+      "animationType": "scale",
+      "animationDuration": 1200,
+      "animationEasing": "elasticOut"
+    }
+  ]
+}

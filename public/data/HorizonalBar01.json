@@ -1,0 +1,55 @@
+{
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": { "type": "shadow" },
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#3498db",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "grid": { "left": 70, "right": 50, "top": 20, "bottom": 20 },
+  "legend": {},
+  "xAxis": {
+    "type": "value",
+    "name": "公里",
+    "boundaryGap": [0, 0.01],
+    "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisTick": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisLabel": { "color": "rgba(255,255,255,0.8)" },
+    "splitLine": { "lineStyle": { "color": "rgba(255,255,255,0.1)" } }
+  },
+  "yAxis": {
+    "type": "category",
+    "data": ["公路总里程","高速","一级","二级","三级","四级"],
+    "inverse": true,
+    "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisTick": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisLabel": { "color": "rgba(255,255,255,0.8)" }
+  },
+  "series": [
+    {
+      "type": "bar",
+      "data": [
+        { "value": 9893, "itemStyle": { "color": "#aa55dd" } },
+        { "value": 598,  "itemStyle": { "color": "#458af1" } },
+        { "value": 1250, "itemStyle": { "color": "#7cffb2" } },
+        { "value": 995,  "itemStyle": { "color": "#f1d25b" } },
+        { "value": 1828, "itemStyle": { "color": "#ff6e76" } },
+        { "value": 5223, "itemStyle": { "color": "#58d9f9" } }
+      ],
+      "itemStyle": {
+        "borderRadius": [0, 6, 6, 0],
+        "shadowBlur": 8,
+        "shadowColor": "rgba(0,0,0,0.2)"
+      },
+      "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 16,
+          "shadowColor": "rgba(0,0,0,0.4)"
+        }
+      },
+      "animationDuration": 1200
+    }
+  ]
+}

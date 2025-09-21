@@ -1,0 +1,33 @@
+{
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "title": {
+    "text": "完成率",
+    "subtext": "总数 1000",
+    "left": "center",
+    "top": "center",
+    "textStyle": { "fontSize": 20, "color": "#fff" },
+    "subtextStyle": { "fontSize": 14, "color": "rgba(255,255,255,0.8)" }
+  },
+  "series": [
+    {
+      "type": "pie",
+      "radius": ["55%", "75%"],
+      "center": ["50%", "50%"],
+      "avoidLabelOverlap": false,
+      "label": { "show": false },
+      "labelLine": { "show": false },
+      "data": [
+        {
+          "name": "已使用",
+          "value": 320,
+          "itemStyle": { "color": "#06D6A0" }
+        },
+        {
+          "name": "剩余",
+          "value": 680,
+          "itemStyle": { "color": "rgba(255,255,255,0.1)" }
+        }
+      ]
+    }
+  ]
+}

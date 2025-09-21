@@ -1,0 +1,285 @@
+{
+  "title": {
+    "text": "南京市高新技术企业分布图",
+    "top": 20,
+    "left": 20
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "formatter": "{b}"
+  },
+  "geo": [
+    {
+      "layoutCenter": ["50%", "50%"],
+      "layoutSize": "180%",
+      "map": "nanjing",
+      "roam": false,
+      "zoom": 0.5,
+      "aspectScale": 1.2,
+      "label": { "color": "#fff", "show": false },
+      "itemStyle": {
+        "areaColor": { "type": "linear", "x": 1200, "y": 0, "x2": 0, "y2": 0, "colorStops": [{ "offset": 0, "color": "rgba(3,27,78,0.75)" }, { "offset": 1, "color": "rgba(58,149,253,0.75)" }], "global": true },
+        "borderColor": "#c0f3fb",
+        "borderWidth": 1,
+        "shadowColor": "#8cd3ef",
+        "shadowOffsetY": 10,
+        "shadowBlur": 30
+      },
+      "emphasis": {
+        "itemStyle": {
+          "areaColor": "rgba(255,255,255,0.8)"
+        },
+        "label": {
+          "show": true, "color": "#000"
+        }
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -1,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "51%"],
+      "layoutSize": "180%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.8)",
+        "shadowColor": "rgba(172, 122, 255,0.5)",
+        "shadowOffsetY": 5,
+        "shadowBlur": 15,
+        "areaColor": "rgba(5,21,35,0.1)"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -2,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "52%"],
+      "layoutSize": "180%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.6)",
+        "shadowColor": "rgba(65, 214, 255,1)",
+        "shadowOffsetY": 5,
+        "shadowBlur": 15,
+        "areaColor": "transparent"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -3,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "53%"],
+      "layoutSize": "180%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.4)",
+        "shadowColor": "rgba(58,149,253,1)",
+        "shadowOffsetY": 15,
+        "shadowBlur": 10,
+        "areaColor": "transparent"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -4,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "54%"],
+      "layoutSize": "180%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 5,
+        "borderColor": "rgba(5,9,57,0.8)",
+        "shadowColor": "rgba(29, 111, 165,0.8)",
+        "shadowOffsetY": 15,
+        "shadowBlur": 10,
+        "areaColor": "rgba(5,21,35,0.1)"
+      }
+    }
+  ],
+  "series": [
+    {
+      "type": "map",
+      "map": "nanjing",
+      "geoIndex": 0,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "showLegendSymbol": true,
+      "roam": true,
+      "label": {
+        "show": true,
+        "color": "#fff",
+        "fontSize": "120%"
+      },
+      "itemStyle": {
+        "areaColor": { "type": "linear", "x": 1200, "y": 0, "x2": 0, "y2": 0, "colorStops": [{ "offset": 0, "color": "rgba(3,27,78,0.75)" }, { "offset": 1, "color": "rgba(58,149,253,0.75)" }], "global": true },
+        "borderColor": "#fff",
+        "borderWidth": 0.2
+      },
+      "layoutCenter": ["50%", "50%"],
+      "layoutSize": "180%",
+      "animation": false
+    },    
+    {
+      "name": "应急",
+      "type": "effectScatter",
+      "coordinateSystem": "geo",
+      "showEffectOn": "render",
+      "rippleEffect": { "scale": 5, "brushType": "stroke" },
+      "label": { "formatter": "{b}", "position": "bottom", "show": false, "color": "#fff", "distance": 10 },
+      "symbol": "circle",
+      "symbolSize": [20, 10],
+      "itemStyle": {  "color": "#16ffff", "shadowBlur": 10, "shadowColor": "#16ffff", "opacity": 1 },
+      "zlevel": 4,
+      "data": [
+        {
+          "name": "中兴通讯（南京）有限责任公司",
+          "value": [
+            118.562628,
+            31.810695
+          ]
+        },
+        {
+          "name": "华为技术有限公司南京研究所",
+          "value": [
+            118.770068,
+            31.979102
+          ]
+        },
+        {
+          "name": "中国电力科学研究院有限公司（南京）",
+          "value": [
+            118.773418,
+            32.081236
+          ]
+        },
+        {
+          "name": "国电南瑞科技股份有限公司",
+          "value": [
+            118.777875,
+            31.901379
+          ]
+        },
+        {
+          "name": "南京南瑞继保电气有限公司",
+          "value": [
+            118.811853,
+            31.894769
+          ]
+        },
+        {
+          "name": "江苏鸿信系统集成有限公司",
+          "value": [
+            118.770318,
+            32.043308
+          ]
+        },
+        {
+          "name": "南京软件谷发展有限公司",
+          "value": [
+            118.751787,
+            31.97085
+          ]
+        },
+        {
+          "name": "南京金斯瑞生物科技有限公司",
+          "value": [
+            118.91721,
+            31.932633
+          ]
+        },
+        {
+          "name": "南京诺唯赞生物科技股份有限公司",
+          "value": [
+            119.008604,
+            32.149865
+          ]
+        },
+        {
+          "name": "江苏满运软件科技有限公司（运满满）",
+          "value": [
+            118.776181,
+            31.971809
+          ]
+        },
+        {
+          "name": "南京芯驰半导体科技有限公司",
+          "value": [
+            118.697163,
+            32.155739
+          ]
+        },
+        {
+          "name": "南京地平线机器人技术有限公司",
+          "value": [
+            118.878578,
+            32.138033
+          ]
+        },
+        {
+          "name": "南京汇川工业视觉技术开发有限公司",
+          "value": [
+            118.788796,
+            31.895653
+          ]
+        },
+        {
+          "name": "南京巨鲨显示科技有限公司",
+          "value": [
+            118.733229,
+            32.039013
+          ]
+        },
+        {
+          "name": "福佑卡车",
+          "value": [
+            118.883017,
+            31.98198
+          ]
+        },
+        {
+          "name": "南京领行科技股份有限公司（T3出行）",
+          "value": [
+            118.810511,
+            31.912898
+          ]
+        },
+        {
+          "name": "南京浩鲸云计算科技股份有限公司",
+          "value": [
+            118.762031,
+            31.972554
+          ]
+        },
+        {
+          "name": "南京联创科技集团股份有限公司",
+          "value": [
+            118.722261,
+            32.034499
+          ]
+        },
+        {
+          "name": "苏交科集团股份有限公司",
+          "value": [
+            118.744168,
+            31.988464
+          ]
+        }
+      ]
+    }
+  ]
+}

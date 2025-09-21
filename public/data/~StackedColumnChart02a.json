@@ -1,0 +1,59 @@
+{
+  "title": {
+    "text": "“十三五”规划时期",
+    "top": 10,
+    "left": "center"
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "legend": {
+    "bottom": 10
+  },
+  "xAxis": [
+    {
+      "type": "category",
+      "data": [
+        "街道",
+        "镇",
+        "居委会",
+        "村委会"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "rotate": 0,
+        "formatter": "{value}\n"
+      }
+    }
+  ],
+  "yAxis": {
+    "name": "数量",
+    "axisLabel": { "show": false },
+    "axisLine": { "show": true }
+  },
+  "series": [
+    {
+      "name": "2016年",
+      "type": "bar",
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        87,
+        13,
+        884,
+        355
+      ],
+      "label": {
+          "show": true,
+          "position": "top",
+          "color": "#fff",
+          "fontSize": 14
+      }
+    }
+  ]
+}

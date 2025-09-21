@@ -1,20 +1,27 @@
 <template>
-  <!-- <VScaleScreen> -->
-  <div class="layout">
-    <div class="sidebar">
-      <div class="wrapper">
-        <div class="menu">
-          <button v-for="value in memuBtn" :key="value.name" :class="{ active: currentPage === value.name }" @click="() => {current = value.page; currentPage = value.name}">{{ value.name }}</button>
+  <VScaleScreen>
+    <div id="index">
+      <div class="sidebar">
+        <div class="wrapper">
+          <div class="menu">
+            <button 
+              v-for="value in memuBtn" 
+              :key="value.name" 
+              :class="{ active: currentPage === value.name }" 
+              @click="() => {current = value.page; currentPage = value.name}"
+              :style="btnTexture(value.name)">
+              
+            </button>
+          </div>
         </div>
       </div>
+      <div class="main">
+        <Transition name="fade" mode="out-in">
+          <component :is="current"/>
+        </Transition>
+      </div>
     </div>
-    <div class="main">
-      <Transition name="fade" mode="out-in">
-        <component :is="current"/>
-      </Transition>
-    </div>
-  </div>
-  <!-- </VScaleScreen> -->
+  </VScaleScreen>
 </template>
 
 <script setup>
@@ -25,58 +32,88 @@ import VScaleScreen from 'v-scale-screen'
 
 import Page01 from '@/pages/Page01.vue'
 import Page02 from '@/pages/Page02.vue'
+import Page03 from '@/pages/Page03.vue'
+import Page04 from '@/pages/Page04.vue'
+import Page05 from '@/pages/Page05.vue'
+import Page06 from '@/pages/Page06.vue'
+
+import { computed } from 'vue'
 
 const current = shallowRef(Page01)
-const currentPage = ref("Page01")
+const currentPage = ref("")
 
 const memuBtn = [
   {
-    name: "页面一",
+    name: "1",
     page: Page01
   },
   {
-    name: "页面二",
+    name: "2",
     page: Page02
-  }
+  },
+  {
+    name: "3",
+    page: Page03
+  },
+  {
+    name: "4",
+    page: Page04
+  },
+  {
+    name: "5",
+    page: Page05
+  },
+  {
+    name: "6",
+    page: Page06
+  }  
 ]
+
+const btnTexture = computed(() => (name) => ({
+  background: `url(/src/assets/buttons/${name}.png) center/cover no-repeat`
+}))
 </script>
 
-<style scoped>
-.layout{
+<style lang="scss" scoped>
+#index {
   background-color: #100C2A;
-  height: 100%;
-  width: 100%;
+  background-image: url('@/assets/pageBg.png');
+  width: 1920px;
+  height: 1080px;
   margin: 0;
   display: grid;
   grid-template-areas:
     "sidebar main";
-  grid-template-columns: 10vw 1fr;
+  grid-template-columns: 10vw 90vw;
   grid-template-rows: 1fr;
-}
-.sidebar {
-  grid-area: sidebar;
-  padding-top: 20px;
-  padding-right: 16px;
-}
-.sidebar .wrapper {
-  height: 100%;
-}
-.sidebar .menu {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.main {
-  grid-area: main;
-  /* padding: 20px; */
-}
-/* 页面切换淡入淡出效果 */
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
+
+  .sidebar {
+    grid-area: sidebar;
+    padding-top: 20px;
+    padding-right: 16px;
+    
+    .wrapper {
+      height: 100%;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .main {
+    grid-area: main;
+  }
+
+  /* 页面切换淡入淡出效果 */
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.3s ease;
+  }
 }
 </style>

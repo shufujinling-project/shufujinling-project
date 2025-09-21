@@ -1,0 +1,50 @@
+{
+  "backgroundColor": "transparent",
+  "tooltip": {
+    "trigger": "item",
+    "formatter": "{a} <br/>{b}: {c} 公里 ({d}%)",
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#96bfff",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "legend": {
+    "orient": "vertical",
+    "left": "left",
+    "top": "center",
+    "textStyle": { "color": "rgba(255,255,255,0.9)", "fontSize": 14 },
+    "itemWidth": 14,
+    "itemHeight": 14,
+    "itemGap": 12
+  },
+  "series": [
+    {
+      "name": "公路里程",
+      "type": "pie",
+      "radius": ["45%", "75%"],
+      "center": ["60%", "50%"],
+      "avoidLabelOverlap": false,
+      "label": { "show": false },
+      "labelLine": { "show": false },
+      "itemStyle": {
+        "borderRadius": 6,
+        "borderColor": "#fff",
+        "borderWidth": 2
+      },
+      "data": [
+        { "value": 598,  "name": "高速",  "itemStyle": { "color": "#e062ae" } },
+        { "value": 1250, "name": "一级",  "itemStyle": { "color": "#fb7293" } },
+        { "value": 995,  "name": "二级",  "itemStyle": { "color": "#e690d1" } },
+        { "value": 1828, "name": "三级",  "itemStyle": { "color": "#32c5e9" } },
+        { "value": 5223, "name": "四级",  "itemStyle": { "color": "#96bfff" } }
+      ],
+      "emphasis": {
+        "scale": 1.12,
+        "itemStyle": { "shadowBlur": 20, "shadowColor": "rgba(0,0,0,0.5)" }
+      },
+      "animationType": "scale",
+      "animationDuration": 1500,
+      "animationEasing": "elasticOut"
+    }
+  ]
+}

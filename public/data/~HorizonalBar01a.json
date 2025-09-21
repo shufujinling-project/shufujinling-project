@@ -1,0 +1,88 @@
+{
+  "title": {
+    "text": "公路客运量与货运量对比",
+    "top": 10,
+    "right": 175
+  },  
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "grid": {
+    "left": 70,
+    "right": 30,
+    "top": 40,
+    "bottom": 20
+  },
+  "legend": {
+    "orient": "vertical",
+    "right": 5,     
+    "top": 10    
+  },
+  "xAxis": {
+    "type": "value",
+    "boundaryGap": [
+      0,
+      0.01
+    ]
+  },
+  "yAxis": {
+    "type": "category",
+    "data": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+    "inverse": true
+  },
+  "series": [
+    {
+      "name": "公路客运量(万人)",
+      "type": "bar",
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        10596.0,
+        9166.0,
+        8490.0,
+        8404.0,
+        8278.0,
+        8229.0,
+        6016.0,
+        5608.0,
+        4871.0,
+        6693.0
+      ]
+    },
+    {
+      "name": "公路货运量(万吨)",
+      "type": "bar",
+      "emphasis": {
+        "focus": "series"
+      },
+      "data": [
+        12143.0,
+        11985.0,
+        12463.0,
+        13806.0,
+        14995.0,
+        22121.0,
+        23611.0,
+        24419.0,
+        20834.0,
+        21899.0
+      ]
+    }
+  ]
+}

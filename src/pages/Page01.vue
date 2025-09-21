@@ -1,30 +1,36 @@
 <template>
 <div class="wrapper">
   <div class="head">
-    <DvBorderBox7>
-      <div class="text-wrapper">
-        南京市智慧经济发展状况
+    <div style="display: flex; height: 100%; gap: 24px">
+      <DvDecoration8/>
+      <div class="text-wrapper" style="flex-shrink: 0;">
+        南京市智慧基础设施发展状况
       </div>
-    </DvBorderBox7>
+      <DvDecoration8 :reverse="true"/>
+    </div>
   </div>
+
   <div class="grid">
     <div class="col1">
-        <DvBorderBox9>
-          <div class="cell">
-            <StackedLineChart optionfile="StackedLineChart01a.json"/>
-          </div>
-        </DvBorderBox9>
-        <DvBorderBox9>
-          <div class="cell">
-            <BasicBar optionfile="BasicBar01a.json"/>
-          </div>
-        </DvBorderBox9>
-        <DvBorderBox9>
-          <div class="cell">
-            <StackedColumnChart optionfile="StackedColumnChart01a.json"/>
-          </div>
-        </DvBorderBox9>
+      <img class="simple-img-title" src="../assets/1-1-1.png"></img>
+      <DvBorderBox12>
+        <div class="cell">
+          <StackedLineChart optionfile="StackedLineChart01a.json"/>
+        </div>
+      </DvBorderBox12>
+      <DvBorderBox12>
+        <div class="cell">
+          <BasicBar optionfile="BasicBar01a.json"/>
+        </div>
+      </DvBorderBox12>
+      <img class="simple-img-title" src="../assets/1-1-3.png"></img>
+      <DvBorderBox12>
+        <div class="cell">
+          <StackedColumnChart optionfile="StackedColumnChart01a.json"/>
+        </div>
+      </DvBorderBox12>      
     </div>
+    
     <div class="col2">
       <DvBorderBox8>
         <div class="cell">
@@ -32,29 +38,34 @@
         </div>
       </DvBorderBox8>
     </div>
+
     <div class="col3">
-      <DvBorderBox9>
-        <div class="cell">
-          <DoughnutChart01 optionfile="DoughnutChart01a.json" tablefile="CapsuleChart01.json"/>
+      <img class="simple-img-title" src="../assets/1-3-1.png"></img>
+      <DvBorderBox12>
+        <div class="cell-col">
+          <TextBox style="height:15%" text="2023年各级公路里程占比"/>
+          <div class="cell--dense">
+            <DoughnutChart01 optionfile="DoughnutChart01a.json" tablefile="CapsuleChart01.json"/>
+          </div>
         </div>
-      </DvBorderBox9>
-      <DvBorderBox9>
+      </DvBorderBox12>
+      <DvBorderBox12>
         <div class="cell">
           <StackedLineChart optionfile="StackedLineChart01b.json"/>
         </div>
-      </DvBorderBox9>
-      <DvBorderBox9>
+      </DvBorderBox12>
+      <DvBorderBox12>
         <div class="cell">
           <HorizonalBar optionfile="HorizonalBar01a.json"/>
         </div>
-      </DvBorderBox9>
+      </DvBorderBox12>
     </div>
+
     <div class="footer">  
       <DvBorderBox12>
-        <ImageText image="https://n.sinaimg.cn/spider202039/200/w600h400/20200309/4c14-iqrhckm6217311.jpg" title="航空港2023年吞吐量" text=""/>
-      </DvBorderBox12>
-      <DvBorderBox12>
-        <ImageText image="https://img95.699pic.com/video_cover/19/55/64/b_I1a4e6kybQ2i1641195564.jpg!/fw/820" title="航空港2023年吞吐量" text=""/>
+        <div class="cell" style="align-items: center;">
+          <img style="height: 260px;" src="../assets/1-2-1.png"></img>
+        </div>
       </DvBorderBox12>
     </div>
   </div>
@@ -73,75 +84,97 @@ import DoughnutChart from '@/charts/DoughnutChart.vue';
 import DoughnutChart01 from '@/charts/DoughnutChart01.vue';
 import HorizonalBar from '@/charts/HorizonalBar.vue';
 import ImageText from '@/charts/ImageText.vue';
+import TextBox from '@/charts/TextBox.vue';
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .wrapper {
-  height: 100%;
-  width: 100%;
+  height: 1080px;
+  width: 1728px;
   display: flex;
   flex-direction: column;
   padding: 10px 30px 30px 30px;
   box-sizing: border-box;
   gap: 16px;
-}
-.head {
-  font-size: 36px;
-  color: white;
-  height: 5%;
-  box-sizing: border-box;
+  
+  .head {
+    font-size: 36px;
+    color: white;
+    height: 5%;
+    box-sizing: border-box;
+    
+    .text-wrapper {
+      height: 100%;
+      display: flex;
+      align-items: center;    
+      justify-content: center;
+    }
+  }
+
+  .grid {
+    height: 95%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "col1 col2 col3"
+      "col1 col2 col3"
+      "col1 footer col3";
+    grid-template-columns: 28% 42% 28%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+    
+    .col1 {
+      grid-area: col1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .col2 {
+      grid-area: col2;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 16px;
+    }
+
+    .col3 {
+      grid-area: col3;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer {
+      grid-area: footer;
+      display: flex;
+      gap: 16px;
+    }
+
+    @mixin cell($direction: row, $pad: 16px) {
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      flex-direction: $direction;
+      @if $pad != 0 { padding: $pad; }
+    }    
+    .cell {
+      @include cell;
+    }
+    .cell--dense {
+      @include cell(row, 0);
+    }
+    .cell-col {
+      @include cell(column);    // 列布局，仍带 20px
+    }
+    .cell-col--dense {
+      @include cell(column, 0); // 列布局，无 padding
+    }
+  }
 }
 
-.head .text-wrapper {
-  height: 100%;
-  display: flex;
-  align-items: center;    
-  justify-content: center;
-}
-.grid {
-  flex: 1;
-  width: 100%;
-  display: grid;
-  grid-template-areas:
-    "col1 col2 col3"
-    "col1 footer col3";
-  grid-template-columns: 28% 42% 28%;
-  grid-template-rows: 2fr 1fr;
-  gap: 16px;
-  min-height:0;
-}
-.grid .col1 {
-  grid-area: col1;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 16px;
-}
-.grid .col2 {
-  grid-area: col2;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 16px;
-}
-.grid .col3 {
-  grid-area: col3;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 16px;
-}
-.grid .footer {
-  grid-area: footer;
-  display: flex;
-  flex: 1;
-}
-.grid .cell{
-  /* background-color: yellow; */
-  min-height: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-}
+
 </style>
+

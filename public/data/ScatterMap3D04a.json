@@ -1,0 +1,151 @@
+{
+  "title": {
+    "text": "南京市智慧医院分布图",
+    "top": 20,
+    "left": 20
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "formatter": "{b}"
+  },
+  "geo": [
+    {
+      "layoutCenter": ["50%", "50%"],
+      "layoutSize": "180%",
+      "map": "nanjing",
+      "roam": false,
+      "zoom": 0.5,
+      "aspectScale": 1.2,
+      "label": { "color": "#fff", "show": false },
+      "itemStyle": {
+        "areaColor": { "type": "linear", "x": 1200, "y": 0, "x2": 0, "y2": 0, "colorStops": [{ "offset": 0, "color": "rgba(3,27,78,0.75)" }, { "offset": 1, "color": "rgba(58,149,253,0.75)" }], "global": true },
+        "borderColor": "#c0f3fb",
+        "borderWidth": 1,
+        "shadowColor": "#8cd3ef",
+        "shadowOffsetY": 10,
+        "shadowBlur": 30
+      },
+      "emphasis": {
+        "itemStyle": {
+          "areaColor": "rgba(255,255,255,0.8)"
+        },
+        "label": {
+          "show": true, "color": "#000"
+        }
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -1,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "51%"],
+      "layoutSize": "180%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.8)",
+        "shadowColor": "rgba(172, 122, 255,0.5)",
+        "shadowOffsetY": 5,
+        "shadowBlur": 15,
+        "areaColor": "rgba(5,21,35,0.1)"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -2,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "52%"],
+      "layoutSize": "180%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.6)",
+        "shadowColor": "rgba(65, 214, 255,1)",
+        "shadowOffsetY": 5,
+        "shadowBlur": 15,
+        "areaColor": "transparent"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -3,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "53%"],
+      "layoutSize": "180%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 1,
+        "borderColor": "rgba(58,149,253,0.4)",
+        "shadowColor": "rgba(58,149,253,1)",
+        "shadowOffsetY": 15,
+        "shadowBlur": 10,
+        "areaColor": "transparent"
+      }
+    },
+    {
+      "type": "map",
+      "map": "nanjing",
+      "zlevel": -4,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "layoutCenter": ["50%", "54%"],
+      "layoutSize": "180%",
+      "roam": false,
+      "silent": true,
+      "itemStyle": {
+        "borderWidth": 5,
+        "borderColor": "rgba(5,9,57,0.8)",
+        "shadowColor": "rgba(29, 111, 165,0.8)",
+        "shadowOffsetY": 15,
+        "shadowBlur": 10,
+        "areaColor": "rgba(5,21,35,0.1)"
+      }
+    }
+  ],
+  "series": [
+    {
+      "type": "map",
+      "map": "nanjing",
+      "geoIndex": 0,
+      "aspectScale": 1.2,
+      "zoom": 0.5,
+      "showLegendSymbol": true,
+      "roam": true,
+      "label": {
+        "show": true,
+        "color": "#fff",
+        "fontSize": "120%"
+      },
+      "itemStyle": {
+        "areaColor": { "type": "linear", "x": 1200, "y": 0, "x2": 0, "y2": 0, "colorStops": [{ "offset": 0, "color": "rgba(3,27,78,0.75)" }, { "offset": 1, "color": "rgba(58,149,253,0.75)" }], "global": true },
+        "borderColor": "#fff",
+        "borderWidth": 0.2
+      },
+      "layoutCenter": ["50%", "50%"],
+      "layoutSize": "180%",
+      "animation": false
+    },    
+    {
+      "name": "应急",
+      "type": "effectScatter",
+      "coordinateSystem": "geo",
+      "showEffectOn": "render",
+      "rippleEffect": { "scale": 5, "brushType": "stroke" },
+      "label": { "formatter": "{b}", "position": "bottom", "show": false, "color": "#fff", "distance": 10 },
+      "symbol": "circle",
+      "symbolSize": [20, 10],
+      "itemStyle": {  "color": "#16ffff", "shadowBlur": 10, "shadowColor": "#16ffff", "opacity": 1 },
+      "zlevel": 4,
+      "data": [{"name": "六合区人民医院", "value": [118.85, 32.34]}, {"name": "南京江北医院", "value": [118.76, 32.23]}, {"name": "南医大四附院", "value": [118.74, 32.14]}, {"name": "江苏省中医院栖霞分院", "value": [118.99, 32.12]}, {"name": "南京市妇幼保健院栖霞分院", "value": [118.78, 32.06]}, {"name": "鼓楼医院", "value": [118.78, 32.06]}, {"name": "江苏省人民医院", "value": [118.77, 32.05]}, {"name": "江苏省口腔医院", "value": [118.78, 32.04]}, {"name": "东南大学附属中大医院", "value": [118.78, 32.07]}, {"name": "南京市儿童医院", "value": [118.78, 32.05]}, {"name": "南京医科大学第二附属医院", "value": [118.74, 32.08]}, {"name": "江苏省第二中医院", "value": [118.76, 32.02]}, {"name": "南京明基医院", "value": [118.73, 31.99]}, {"name": "江苏省肿瘤医院", "value": [118.79, 32.07]}, {"name": "南京市中西医结合医院", "value": [118.86, 32.03]}, {"name": "江苏省中医院", "value": [118.77, 32.04]}, {"name": "南京市第一医院", "value": [118.78, 32.02]}, {"name": "江宁医院", "value": [118.85, 31.95]}, {"name": "溧水区人民医院", "value": [119.03, 31.63]}, {"name": "高淳人民医院", "value": [118.94, 31.36]}, {"name": "南京市江北新区卫生健康和民政局", "value": [118.84, 31.95]}, {"name": "浦口区卫生健康委员会", "value": [118.66, 32.07]}, {"name": "栖霞区卫生健康委员会", "value": [118.93, 32.1]}, {"name": "建邺区健康委员会", "value": [118.73, 32.0]}, {"name": "雨花台区健康委员会", "value": [118.78, 31.99]}, {"name": "南京市妇幼保健院", "value": [118.78, 32.04]}, {"name": "江宁区卫生健康委员会", "value": [118.84, 31.95]}, {"name": "溧水区卫生健康委员会", "value": [119.05, 31.66]}, {"name": "高淳区卫生健康委员会", "value": [118.89, 31.33]}, {"name": "南京市妇幼保健院", "value": [118.78, 32.04]}]
+    }
+  ]
+}

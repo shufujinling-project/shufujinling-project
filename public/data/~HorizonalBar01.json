@@ -1,0 +1,41 @@
+{
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "grid": {
+    "left": 70,
+    "right": 30,
+    "top": 20,
+    "bottom": 20
+  },
+  "legend": {},
+  "xAxis": {
+    "type": "value",
+    "boundaryGap": [
+      0,
+      0.01
+    ]
+  },
+  "yAxis": {
+    "type": "category",
+    "data": ["公路总里程","高速","一级","二级","三级","四级"],
+    "inverse": true
+  },
+  "series": [
+    {
+      "type": "bar",
+      "data": [
+      { "value": 9893, "itemStyle": { "color": "#aa55dd" } },
+      { "value": 598,  "itemStyle": { "color": "#458af1" } },
+      { "value": 1250, "itemStyle": { "color": "#7cffb2" } },
+      { "value": 995,  "itemStyle": { "color": "#f1d25b" } },
+      { "value": 1828, "itemStyle": { "color": "#ff6e76" } },
+      { "value": 5223, "itemStyle": { "color": "#58d9f9" } }
+      ]
+    }
+  ]
+}

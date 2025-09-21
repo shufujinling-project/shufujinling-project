@@ -1,0 +1,49 @@
+{
+  "tooltip": {
+    "trigger": "item",
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#3498db",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "legend": {
+    "top": "5%",
+    "left": "center",
+    "textStyle": { "color": "rgba(255,255,255,0.9)", "fontSize": 14 },
+    "itemWidth": 14,
+    "itemHeight": 14,
+    "itemGap": 12
+  },
+  "series": [
+    {
+      "name": "",
+      "type": "pie",
+      "radius": ["40%", "65%"],
+      "center": ["50%", "70%"],
+      "avoidLabelOverlap": false,
+      "label": { "show": false, "position": "center" },
+      "labelLine": { "show": false },
+      "itemStyle": {
+        "borderRadius": 8,
+        "borderColor": "#fff",
+        "borderWidth": 2
+      },
+      "data": [
+        { "name": "高速", "value": 598, "itemStyle": { "color": "#06D6A0" } },
+        { "name": "一级", "value": 1250, "itemStyle": { "color": "#FF8C42" } },
+        { "name": "二级", "value": 995, "itemStyle": { "color": "#FFD166" } },
+        { "name": "三级", "value": 1828, "itemStyle": { "color": "#EF476F" } },
+        { "name": "四级", "value": 5223, "itemStyle": { "color": "#8395A7" } }
+      ],
+      "emphasis": {
+        "scale": 1.12,
+        "label": { "show": true, "fontSize": 40, "fontWeight": "bold", "color": "#fff" },
+        "itemStyle": { "shadowBlur": 20, "shadowColor": "rgba(0,0,0,0.5)" }
+      },
+      "animationType": "scale",
+      "animationDuration": 1500,
+      "animationEasing": "elasticOut"
+    }
+  ]
+}

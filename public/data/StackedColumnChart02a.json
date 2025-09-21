@@ -1,0 +1,75 @@
+{
+  "title": {
+    "text": "“十三五”规划时期",
+    "top": 10,
+    "left": "center",
+    "textStyle": {
+      "fontSize": 20,
+      "color": "#fff",
+      "textShadowColor": "rgba(0,0,0,0.5)",
+      "textShadowBlur": 6
+    }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": { "type": "shadow" },
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#3498db",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "legend": {
+    "bottom": 10,
+    "textStyle": { "color": "rgba(255,255,255,0.9)", "fontSize": 14 },
+    "itemWidth": 14,
+    "itemHeight": 14,
+    "itemGap": 12
+  },
+  "xAxis": [
+    {
+      "type": "category",
+      "data": ["街道", "镇", "居委会", "村委会"],
+      "axisLabel": { "interval": 0, "rotate": 0, "formatter": "{value}\n", "color": "rgba(255,255,255,0.8)" },
+      "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+      "axisTick": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } }
+    }
+  ],
+  "yAxis": {
+    "name": "数量",
+    "axisLabel": { "show": false },
+    "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "splitLine": { "lineStyle": { "color": "rgba(255,255,255,0.1)" } }
+  },
+  "series": [
+    {
+      "name": "2016年",
+      "type": "bar",
+      "data": [
+        { "value": 87,  "itemStyle": { "color": "#0aaaee" } },
+        { "value": 13,  "itemStyle": { "color": "#0aaaee" } },
+        { "value": 884, "itemStyle": { "color": "#0aaaee" } },
+        { "value": 355, "itemStyle": { "color": "#0aaaee" } }
+      ],
+      "label": {
+        "show": true,
+        "position": "top",
+        "color": "#fff",
+        "fontSize": 14,
+        "fontWeight": "bold"
+      },
+      "itemStyle": {
+        "borderRadius": [6, 6, 0, 0],
+        "shadowBlur": 8,
+        "shadowColor": "rgba(0,0,0,0.2)"
+      },
+      "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 16,
+          "shadowColor": "rgba(0,0,0,0.4)"
+        }
+      },
+      "animationDuration": 1200
+    }
+  ]
+}

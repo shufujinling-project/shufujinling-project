@@ -1,0 +1,64 @@
+{
+  "title": {
+    "text": "邮电业务增长状况",
+    "top": 10,
+    "left": "center"
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "grid": {
+    "left": "3%",
+    "right": "4%",
+    "bottom": "3%",
+    "containLabel": true
+  },
+  "xAxis": [
+    {
+      "type": "category",
+      "data": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "axisTick": {
+        "alignWithLabel": true
+      },
+      "axisLabel": {
+        "interval": 0
+      }
+    }
+  ],
+  "yAxis": [
+    {
+      "type": "value"
+    }
+  ],
+  "series": [
+    {
+      "name": "Direct",
+      "type": "bar",
+      "barWidth": "60%",
+      "data": [
+        237.94,
+        360.9,
+        525.27,
+        451.11,
+        847.75,
+        1259.81,
+        1484.64
+      ],
+      "itemStyle": {
+        "color": "#7cffb2"
+      }
+    }
+  ]
+}

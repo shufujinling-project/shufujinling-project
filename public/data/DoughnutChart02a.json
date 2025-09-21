@@ -1,0 +1,48 @@
+{
+  "tooltip": {
+    "trigger": "item",
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#3498db",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "legend": {
+    "top": "5%",
+    "left": "center",
+    "textStyle": { "color": "rgba(255,255,255,0.9)", "fontSize": 14 },
+    "itemWidth": 14,
+    "itemHeight": 14,
+    "itemGap": 12
+  },
+  "series": [
+    {
+      "name": "",
+      "type": "pie",
+      "radius": ["40%", "70%"],
+      "center": ["50%", "60%"],
+      "avoidLabelOverlap": false,
+      "label": { "show": false, "position": "center" },
+      "labelLine": { "show": false },
+      "itemStyle": {
+        "borderRadius": 8,
+        "borderColor": "#fff",
+        "borderWidth": 2
+      },
+      "data": [
+        { "name": "综合网格", "value": 12000, "itemStyle": { "color": "#06D6A0" } },
+        { "name": "网格党支部", "value": 6228, "itemStyle": { "color": "#FF8C42" } },
+        { "name": "党小组", "value": 10697, "itemStyle": { "color": "#FFD166" } },
+        { "name": "网格服务站", "value": 4884, "itemStyle": { "color": "#EF476F" } }
+      ],
+      "emphasis": {
+        "scale": 1.12,
+        "label": { "show": true, "fontSize": 40, "fontWeight": "bold", "color": "#fff" },
+        "itemStyle": { "shadowBlur": 20, "shadowColor": "rgba(0,0,0,0.5)" }
+      },
+      "animationType": "scale",
+      "animationDuration": 1500,
+      "animationEasing": "elasticOut"
+    }
+  ]
+}

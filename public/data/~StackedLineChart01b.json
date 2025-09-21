@@ -1,0 +1,60 @@
+{
+  "title": {
+    "text": "公路里程变化情况",
+    "top": 10,
+    "left": "center"
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis"
+  },
+  "grid": {
+    "left": "3%",
+    "right": "10%",
+    "bottom": "3%",
+    "containLabel": true
+  },
+  "toolbox": {
+    "feature": {
+      "saveAsImage": {}
+    }
+  },
+  "xAxis": {
+    "type": "category",
+    "name": "年份",
+    "boundaryGap": false,
+    "data": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ]
+  },
+  "yAxis": {
+    "type": "value"
+  },
+"series": [
+    {
+      "name": "公路里程(公里)",
+      "type": "line",
+      "data": [
+        11309.0,
+        11303.0,
+        11211.0,
+        11320.0,
+        10632.0,
+        10178.0,
+        9793.0,
+        9746.0,
+        9850.0,
+        9893.0
+      ]
+    }
+  ]
+}

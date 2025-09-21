@@ -1,0 +1,97 @@
+{
+  "title": {
+    "text": "公路客运量与货运量对比",
+    "top": 10,
+    "right": 175,
+    "textStyle": {
+      "fontSize": 20,
+      "color": "#fff",
+      "textShadowColor": "rgba(0,0,0,0.5)",
+      "textShadowBlur": 6
+    }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": { "type": "shadow" },
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#3498db",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "grid": { "left": 70, "right": 50, "top": 40, "bottom": 20 },
+  "legend": {
+    "orient": "vertical",
+    "right": 5,
+    "top": 10,
+    "textStyle": { "color": "rgba(255,255,255,0.9)", "fontSize": 14 },
+    "itemWidth": 14,
+    "itemHeight": 14,
+    "itemGap": 12
+  },
+  "xAxis": {
+    "type": "value",
+    "name": "万吨",
+    "boundaryGap": [0, 0.01],
+    "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisTick": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisLabel": { "color": "rgba(255,255,255,0.8)" },
+    "splitLine": { "lineStyle": { "color": "rgba(255,255,255,0.1)" } }
+  },
+  "yAxis": {
+    "type": "category",
+    "data": ["2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],
+    "inverse": true,
+    "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisTick": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisLabel": { "color": "rgba(255,255,255,0.8)" }
+  },
+  "series": [
+    {
+      "name": "公路客运量(万人)",
+      "type": "bar",
+      "data": [10596.0,9166.0,8490.0,8404.0,8278.0,8229.0,6016.0,5608.0,4871.0,6693.0],
+      "itemStyle": {
+        "borderRadius": [0, 6, 6, 0],
+        "color": {
+          "type": "linear",
+          "x": 0, "y": 0, "x2": 1, "y2": 0,
+          "colorStops": [
+            { "offset": 0, "color": "#06D6A0" },
+            { "offset": 1, "color": "#2EC4B6" }
+          ]
+        }
+      },
+      "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 12,
+          "shadowColor": "rgba(6,214,160,0.6)"
+        }
+      },
+      "animationDuration": 1200
+    },
+    {
+      "name": "公路货运量(万吨)",
+      "type": "bar",
+      "data": [12143.0,11985.0,12463.0,13806.0,14995.0,22121.0,23611.0,24419.0,20834.0,21899.0],
+      "itemStyle": {
+        "borderRadius": [0, 6, 6, 0],
+        "color": {
+          "type": "linear",
+          "x": 0, "y": 0, "x2": 1, "y2": 0,
+          "colorStops": [
+            { "offset": 0, "color": "#FF8C42" },
+            { "offset": 1, "color": "#FFD166" }
+          ]
+        }
+      },
+      "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 12,
+          "shadowColor": "rgba(255,140,66,0.6)"
+        }
+      },
+      "animationDuration": 1200
+    }
+  ]
+}

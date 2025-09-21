@@ -1,0 +1,98 @@
+{
+  "title": {
+    "text": "全年用电量与工业用电量变化趋势",
+    "top": 10,
+    "left": "center",
+    "textStyle": {
+      "fontSize": 20,
+      "color": "#fff",
+      "textShadowColor": "rgba(0,0,0,0.5)",
+      "textShadowBlur": 6
+    }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": { "type": "shadow" },
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#3498db",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "legend": {
+    "bottom": 10,
+    "textStyle": { "color": "rgba(255,255,255,0.9)", "fontSize": 14 },
+    "itemWidth": 14,
+    "itemHeight": 14,
+    "itemGap": 12
+  },
+  "xAxis": [
+    {
+      "type": "category",
+      "name": "年份",
+      "data": ["2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],
+      "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+      "axisTick": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+      "axisLabel": { "color": "rgba(255,255,255,0.8)" }
+    }
+  ],
+  "yAxis": [
+    {
+      "type": "value",
+      "name": "亿千瓦时",
+      "axisLine": { "show": false },
+      "axisTick": { "show": false },
+      "splitLine": { "lineStyle": { "color": "rgba(255,255,255,0.1)" } },
+      "axisLabel": { "color": "rgba(255,255,255,0.8)" },
+      "nameTextStyle": { "color": "rgba(255,255,255,0.8)" }
+    }
+  ],
+  "series": [
+    {
+      "name": "全年用电量",
+      "type": "bar",
+      "data": [470.5,495.18,524.79,556.96,606.4,621.53,632.94,683.57,724.46,747.27],
+      "itemStyle": {
+        "borderRadius": [6, 6, 0, 0],
+        "color": {
+          "type": "linear",
+          "x": 0, "y": 0, "x2": 0, "y2": 1,
+          "colorStops": [
+            { "offset": 0, "color": "#06D6A0" },
+            { "offset": 1, "color": "#2EC4B6" }
+          ]
+        }
+      },
+      "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 12,
+          "shadowColor": "rgba(6,214,160,0.6)"
+        }
+      },
+      "animationDuration": 1200
+    },
+    {
+      "name": "工业用电",
+      "type": "bar",
+      "data": [289.02,300.54,310.81,318.14,331.27,327.26,338.88,350.33,355.25,365.83],
+      "itemStyle": {
+        "borderRadius": [6, 6, 0, 0],
+        "color": {
+          "type": "linear",
+          "x": 0, "y": 0, "x2": 0, "y2": 1,
+          "colorStops": [
+            { "offset": 0, "color": "#FF8C42" },
+            { "offset": 1, "color": "#FFD166" }
+          ]
+        }
+      },
+      "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 12,
+          "shadowColor": "rgba(255,140,66,0.6)"
+        }
+      },
+      "animationDuration": 1200
+    }
+  ]
+}

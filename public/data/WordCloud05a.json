@@ -1,0 +1,1232 @@
+{
+  "tooltip": {},
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "series": [
+    {
+      "type": "wordCloud",
+      "shape": "circle",
+      "left": "center",
+      "top": "center",
+      "width": "90%",
+      "height": "90%",
+      "sizeRange": [
+        12,
+        60
+      ],
+      "rotationRange": [
+        -45,
+        45
+      ],
+      "gridSize": 8,
+      "textStyle": {},
+      "emphasis": {
+        "textStyle": {
+          "shadowBlur": 10,
+          "shadowColor": "#333"
+        }
+      },
+      "data": [
+        {
+          "name": "发展",
+          "value": 77
+        },
+        {
+          "name": "城市",
+          "value": 70
+        },
+        {
+          "name": "智慧",
+          "value": 67
+        },
+        {
+          "name": "建设",
+          "value": 47
+        },
+        {
+          "name": "南京",
+          "value": 41
+        },
+        {
+          "name": "信息化",
+          "value": 36
+        },
+        {
+          "name": "南京市",
+          "value": 27
+        },
+        {
+          "name": "关于",
+          "value": 22
+        },
+        {
+          "name": "规划",
+          "value": 21
+        },
+        {
+          "name": "应用",
+          "value": 18
+        },
+        {
+          "name": "信息",
+          "value": 18
+        },
+        {
+          "name": "推进",
+          "value": 17
+        },
+        {
+          "name": "融合",
+          "value": 17
+        },
+        {
+          "name": "实现",
+          "value": 16
+        },
+        {
+          "name": "信息技术",
+          "value": 14
+        },
+        {
+          "name": "产业",
+          "value": 14
+        },
+        {
+          "name": "社会",
+          "value": 14
+        },
+        {
+          "name": "创新",
+          "value": 13
+        },
+        {
+          "name": "技术",
+          "value": 13
+        },
+        {
+          "name": "市政府",
+          "value": 13
+        },
+        {
+          "name": "十二五",
+          "value": 12
+        },
+        {
+          "name": "通知",
+          "value": 12
+        },
+        {
+          "name": "成为",
+          "value": 12
+        },
+        {
+          "name": "经济",
+          "value": 12
+        },
+        {
+          "name": "建成",
+          "value": 12
+        },
+        {
+          "name": "达到",
+          "value": 12
+        },
+        {
+          "name": "印发",
+          "value": 11
+        },
+        {
+          "name": "管理",
+          "value": 11
+        },
+        {
+          "name": "体系",
+          "value": 11
+        },
+        {
+          "name": "无线",
+          "value": 10
+        },
+        {
+          "name": "宽带",
+          "value": 10
+        },
+        {
+          "name": "资源",
+          "value": 10
+        },
+        {
+          "name": "面临",
+          "value": 10
+        },
+        {
+          "name": "我市",
+          "value": 9
+        },
+        {
+          "name": "水平",
+          "value": 9
+        },
+        {
+          "name": "设计",
+          "value": 9
+        },
+        {
+          "name": "政务",
+          "value": 9
+        },
+        {
+          "name": "提升",
+          "value": 8
+        },
+        {
+          "name": "智能",
+          "value": 8
+        },
+        {
+          "name": "重要",
+          "value": 8
+        },
+        {
+          "name": "提出",
+          "value": 8
+        },
+        {
+          "name": "战略",
+          "value": 8
+        },
+        {
+          "name": "加快",
+          "value": 8
+        },
+        {
+          "name": "基本",
+          "value": 8
+        },
+        {
+          "name": "网络",
+          "value": 8
+        },
+        {
+          "name": "基础设施",
+          "value": 8
+        },
+        {
+          "name": "国家",
+          "value": 8
+        },
+        {
+          "name": "进一步",
+          "value": 8
+        },
+        {
+          "name": "提供",
+          "value": 8
+        },
+        {
+          "name": "互联网",
+          "value": 8
+        },
+        {
+          "name": "以上",
+          "value": 8
+        },
+        {
+          "name": "领域",
+          "value": 8
+        },
+        {
+          "name": "人民政府",
+          "value": 7
+        },
+        {
+          "name": "方式",
+          "value": 7
+        },
+        {
+          "name": "积极",
+          "value": 7
+        },
+        {
+          "name": "联网",
+          "value": 7
+        },
+        {
+          "name": "五年",
+          "value": 7
+        },
+        {
+          "name": "全市",
+          "value": 7
+        },
+        {
+          "name": "期间",
+          "value": 7
+        },
+        {
+          "name": "通过",
+          "value": 7
+        },
+        {
+          "name": "目标",
+          "value": 7
+        },
+        {
+          "name": "政发",
+          "value": 6
+        },
+        {
+          "name": "工业化",
+          "value": 6
+        },
+        {
+          "name": "基础",
+          "value": 6
+        },
+        {
+          "name": "构建",
+          "value": 6
+        },
+        {
+          "name": "意见",
+          "value": 6
+        },
+        {
+          "name": "转型",
+          "value": 6
+        },
+        {
+          "name": "国民经济",
+          "value": 6
+        },
+        {
+          "name": "第十二个",
+          "value": 6
+        },
+        {
+          "name": "打造",
+          "value": 6
+        },
+        {
+          "name": "支撑",
+          "value": 6
+        },
+        {
+          "name": "全面",
+          "value": 6
+        },
+        {
+          "name": "方面",
+          "value": 6
+        },
+        {
+          "name": "系统",
+          "value": 6
+        },
+        {
+          "name": "人才",
+          "value": 6
+        },
+        {
+          "name": "政府",
+          "value": 6
+        },
+        {
+          "name": "电子政务",
+          "value": 6
+        },
+        {
+          "name": "服务",
+          "value": 6
+        },
+        {
+          "name": "趋势",
+          "value": 5
+        },
+        {
+          "name": "转变",
+          "value": 5
+        },
+        {
+          "name": "现代化",
+          "value": 5
+        },
+        {
+          "name": "先进",
+          "value": 5
+        },
+        {
+          "name": "市民",
+          "value": 5
+        },
+        {
+          "name": "模式",
+          "value": 5
+        },
+        {
+          "name": "广泛",
+          "value": 5
+        },
+        {
+          "name": "有效",
+          "value": 5
+        },
+        {
+          "name": "公共服务",
+          "value": 5
+        },
+        {
+          "name": "综合",
+          "value": 5
+        },
+        {
+          "name": "主要",
+          "value": 5
+        },
+        {
+          "name": "重点",
+          "value": 5
+        },
+        {
+          "name": "工作",
+          "value": 5
+        },
+        {
+          "name": "信息产业",
+          "value": 5
+        },
+        {
+          "name": "亿元",
+          "value": 5
+        },
+        {
+          "name": "用户",
+          "value": 5
+        },
+        {
+          "name": "数字化",
+          "value": 5
+        },
+        {
+          "name": "平台",
+          "value": 5
+        },
+        {
+          "name": "形成",
+          "value": 5
+        },
+        {
+          "name": "挑战",
+          "value": 5
+        },
+        {
+          "name": "生活",
+          "value": 5
+        },
+        {
+          "name": "随着",
+          "value": 4
+        },
+        {
+          "name": "改善",
+          "value": 4
+        },
+        {
+          "name": "重大",
+          "value": 4
+        },
+        {
+          "name": "初步",
+          "value": 4
+        },
+        {
+          "name": "国际",
+          "value": 4
+        },
+        {
+          "name": "进行",
+          "value": 4
+        },
+        {
+          "name": "深入",
+          "value": 4
+        },
+        {
+          "name": "国内外",
+          "value": 4
+        },
+        {
+          "name": "不断",
+          "value": 4
+        },
+        {
+          "name": "作为",
+          "value": 4
+        },
+        {
+          "name": "优势",
+          "value": 4
+        },
+        {
+          "name": "人文",
+          "value": 4
+        },
+        {
+          "name": "提高",
+          "value": 4
+        },
+        {
+          "name": "生活品质",
+          "value": 4
+        },
+        {
+          "name": "智能化",
+          "value": 4
+        },
+        {
+          "name": "手段",
+          "value": 4
+        },
+        {
+          "name": "安全",
+          "value": 4
+        },
+        {
+          "name": "科学",
+          "value": 4
+        },
+        {
+          "name": "形势",
+          "value": 4
+        },
+        {
+          "name": "总体",
+          "value": 4
+        },
+        {
+          "name": "制定",
+          "value": 4
+        },
+        {
+          "name": "建议",
+          "value": 4
+        },
+        {
+          "name": "中国",
+          "value": 4
+        },
+        {
+          "name": "软件",
+          "value": 4
+        },
+        {
+          "name": "率先",
+          "value": 4
+        },
+        {
+          "name": "十一五",
+          "value": 4
+        },
+        {
+          "name": "深化",
+          "value": 4
+        },
+        {
+          "name": "整合",
+          "value": 4
+        },
+        {
+          "name": "推动",
+          "value": 4
+        },
+        {
+          "name": "试点",
+          "value": 4
+        },
+        {
+          "name": "完善",
+          "value": 4
+        },
+        {
+          "name": "数字",
+          "value": 4
+        },
+        {
+          "name": "覆盖",
+          "value": 4
+        },
+        {
+          "name": "良好",
+          "value": 4
+        },
+        {
+          "name": "万户",
+          "value": 4
+        },
+        {
+          "name": "全国",
+          "value": 4
+        },
+        {
+          "name": "工程",
+          "value": 4
+        },
+        {
+          "name": "得到",
+          "value": 4
+        },
+        {
+          "name": "社区",
+          "value": 4
+        },
+        {
+          "name": "制造业",
+          "value": 4
+        },
+        {
+          "name": "培育",
+          "value": 4
+        },
+        {
+          "name": "增长",
+          "value": 4
+        },
+        {
+          "name": "专业",
+          "value": 4
+        },
+        {
+          "name": "企业",
+          "value": 4
+        },
+        {
+          "name": "机遇",
+          "value": 4
+        },
+        {
+          "name": "带来",
+          "value": 4
+        },
+        {
+          "name": "环境",
+          "value": 4
+        },
+        {
+          "name": "电子商务",
+          "value": 4
+        },
+        {
+          "name": "办公厅",
+          "value": 4
+        },
+        {
+          "name": "政策",
+          "value": 3
+        },
+        {
+          "name": "保障",
+          "value": 3
+        },
+        {
+          "name": "理念",
+          "value": 3
+        },
+        {
+          "name": "研究",
+          "value": 3
+        },
+        {
+          "name": "举办",
+          "value": 3
+        },
+        {
+          "name": "一批",
+          "value": 3
+        },
+        {
+          "name": "计算",
+          "value": 3
+        },
+        {
+          "name": "竞争",
+          "value": 3
+        },
+        {
+          "name": "领先",
+          "value": 3
+        },
+        {
+          "name": "国际性",
+          "value": 3
+        },
+        {
+          "name": "核心",
+          "value": 3
+        },
+        {
+          "name": "新一代",
+          "value": 3
+        },
+        {
+          "name": "快速",
+          "value": 3
+        },
+        {
+          "name": "传输",
+          "value": 3
+        },
+        {
+          "name": "城市化",
+          "value": 3
+        },
+        {
+          "name": "分析",
+          "value": 3
+        },
+        {
+          "name": "任务",
+          "value": 3
+        },
+        {
+          "name": "顶层",
+          "value": 3
+        },
+        {
+          "name": "中共南京市委",
+          "value": 3
+        },
+        {
+          "name": "宁委发",
+          "value": 3
+        },
+        {
+          "name": "项目",
+          "value": 3
+        },
+        {
+          "name": "科技",
+          "value": 3
+        },
+        {
+          "name": "名城",
+          "value": 3
+        },
+        {
+          "name": "软件产业",
+          "value": 3
+        },
+        {
+          "name": "中心",
+          "value": 3
+        },
+        {
+          "name": "突出",
+          "value": 3
+        },
+        {
+          "name": "加强",
+          "value": 3
+        },
+        {
+          "name": "作用",
+          "value": 3
+        },
+        {
+          "name": "两化",
+          "value": 3
+        },
+        {
+          "name": "三网",
+          "value": 3
+        },
+        {
+          "name": "有线电视",
+          "value": 3
+        },
+        {
+          "name": "商务",
+          "value": 3
+        },
+        {
+          "name": "具有",
+          "value": 3
+        },
+        {
+          "name": "行政",
+          "value": 3
+        },
+        {
+          "name": "权力",
+          "value": 3
+        },
+        {
+          "name": "以及",
+          "value": 3
+        },
+        {
+          "name": "电子",
+          "value": 3
+        },
+        {
+          "name": "普及",
+          "value": 3
+        },
+        {
+          "name": "大量",
+          "value": 3
+        },
+        {
+          "name": "教育",
+          "value": 3
+        },
+        {
+          "name": "经济社会",
+          "value": 3
+        },
+        {
+          "name": "要求",
+          "value": 3
+        },
+        {
+          "name": "全面提高",
+          "value": 3
+        },
+        {
+          "name": "需求",
+          "value": 3
+        },
+        {
+          "name": "服务业",
+          "value": 3
+        },
+        {
+          "name": "青奥会",
+          "value": 3
+        },
+        {
+          "name": "机制",
+          "value": 3
+        },
+        {
+          "name": "信息安全",
+          "value": 3
+        },
+        {
+          "name": "架构",
+          "value": 3
+        },
+        {
+          "name": "行动计划",
+          "value": 3
+        },
+        {
+          "name": "区县",
+          "value": 2
+        },
+        {
+          "name": "举措",
+          "value": 2
+        },
+        {
+          "name": "实践",
+          "value": 2
+        },
+        {
+          "name": "特色",
+          "value": 2
+        },
+        {
+          "name": "引领",
+          "value": 2
+        },
+        {
+          "name": "未来",
+          "value": 2
+        },
+        {
+          "name": "围绕",
+          "value": 2
+        },
+        {
+          "name": "和物",
+          "value": 2
+        },
+        {
+          "name": "三个",
+          "value": 2
+        },
+        {
+          "name": "明确提出",
+          "value": 2
+        },
+        {
+          "name": "升级",
+          "value": 2
+        },
+        {
+          "name": "新一轮",
+          "value": 2
+        },
+        {
+          "name": "纲要",
+          "value": 2
+        },
+        {
+          "name": "和谐",
+          "value": 2
+        },
+        {
+          "name": "中国共产党",
+          "value": 2
+        },
+        {
+          "name": "第十三次",
+          "value": 2
+        },
+        {
+          "name": "代表大会",
+          "value": 2
+        },
+        {
+          "name": "报告",
+          "value": 2
+        },
+        {
+          "name": "指出",
+          "value": 2
+        },
+        {
+          "name": "广泛应用",
+          "value": 2
+        },
+        {
+          "name": "高端化",
+          "value": 2
+        },
+        {
+          "name": "信息时代",
+          "value": 2
+        },
+        {
+          "name": "知识",
+          "value": 2
+        },
+        {
+          "name": "感知",
+          "value": 2
+        },
+        {
+          "name": "运行",
+          "value": 2
+        },
+        {
+          "name": "市场化",
+          "value": 2
+        },
+        {
+          "name": "国际化",
+          "value": 2
+        },
+        {
+          "name": "竞争力",
+          "value": 2
+        },
+        {
+          "name": "思路",
+          "value": 2
+        },
+        {
+          "name": "人文环境",
+          "value": 2
+        },
+        {
+          "name": "构架",
+          "value": 2
+        },
+        {
+          "name": "制度",
+          "value": 2
+        },
+        {
+          "name": "更具",
+          "value": 2
+        },
+        {
+          "name": "期限",
+          "value": 2
+        },
+        {
+          "name": "中共中央",
+          "value": 2
+        },
+        {
+          "name": "坚持",
+          "value": 2
+        },
+        {
+          "name": "数据中心",
+          "value": 2
+        },
+        {
+          "name": "交通",
+          "value": 2
+        },
+        {
+          "name": "实施",
+          "value": 2
+        },
+        {
+          "name": "紧紧围绕",
+          "value": 2
+        },
+        {
+          "name": "这一",
+          "value": 2
+        },
+        {
+          "name": "管理水平",
+          "value": 2
+        },
+        {
+          "name": "发挥",
+          "value": 2
+        },
+        {
+          "name": "奠定",
+          "value": 2
+        },
+        {
+          "name": "光缆",
+          "value": 2
+        },
+        {
+          "name": "主体",
+          "value": 2
+        },
+        {
+          "name": "规模",
+          "value": 2
+        },
+        {
+          "name": "拥有",
+          "value": 2
+        },
+        {
+          "name": "出口",
+          "value": 2
+        },
+        {
+          "name": "接入",
+          "value": 2
+        },
+        {
+          "name": "农村",
+          "value": 2
+        },
+        {
+          "name": "其中",
+          "value": 2
+        },
+        {
+          "name": "为主",
+          "value": 2
+        },
+        {
+          "name": "前列",
+          "value": 2
+        },
+        {
+          "name": "热点",
+          "value": 2
+        },
+        {
+          "name": "宽带接入",
+          "value": 2
+        },
+        {
+          "name": "同时",
+          "value": 2
+        },
+        {
+          "name": "行业",
+          "value": 2
+        },
+        {
+          "name": "应急",
+          "value": 2
+        },
+        {
+          "name": "指挥",
+          "value": 2
+        },
+        {
+          "name": "取得",
+          "value": 2
+        },
+        {
+          "name": "成效",
+          "value": 2
+        },
+        {
+          "name": "特点",
+          "value": 2
+        },
+        {
+          "name": "相关",
+          "value": 2
+        },
+        {
+          "name": "政府部门",
+          "value": 2
+        },
+        {
+          "name": "事项",
+          "value": 2
+        },
+        {
+          "name": "统一",
+          "value": 2
+        },
+        {
+          "name": "建立",
+          "value": 2
+        },
+        {
+          "name": "社会保障",
+          "value": 2
+        },
+        {
+          "name": "信息系统",
+          "value": 2
+        },
+        {
+          "name": "引导",
+          "value": 2
+        },
+        {
+          "name": "软件业",
+          "value": 2
+        },
+        {
+          "name": "收入",
+          "value": 2
+        },
+        {
+          "name": "突破",
+          "value": 2
+        },
+        {
+          "name": "科教",
+          "value": 2
+        },
+        {
+          "name": "比较",
+          "value": 2
+        },
+        {
+          "name": "北京",
+          "value": 2
+        },
+        {
+          "name": "上海",
+          "value": 2
+        },
+        {
+          "name": "调整",
+          "value": 2
+        },
+        {
+          "name": "培养",
+          "value": 2
+        },
+        {
+          "name": "大中型",
+          "value": 2
+        },
+        {
+          "name": "更加",
+          "value": 2
+        },
+        {
+          "name": "逐步",
+          "value": 2
+        },
+        {
+          "name": "下一代",
+          "value": 2
+        },
+        {
+          "name": "各种",
+          "value": 2
+        },
+        {
+          "name": "实时",
+          "value": 2
+        },
+        {
+          "name": "处理",
+          "value": 2
+        },
+        {
+          "name": "国务院",
+          "value": 2
+        },
+        {
+          "name": "电信网",
+          "value": 2
+        },
+        {
+          "name": "研发",
+          "value": 2
+        },
+        {
+          "name": "内在",
+          "value": 2
+        },
+        {
+          "name": "时代",
+          "value": 2
+        },
+        {
+          "name": "压力",
+          "value": 2
+        },
+        {
+          "name": "发布",
+          "value": 2
+        },
+        {
+          "name": "基地",
+          "value": 2
+        },
+        {
+          "name": "配置",
+          "value": 2
+        },
+        {
+          "name": "协调",
+          "value": 2
+        },
+        {
+          "name": "适应",
+          "value": 2
+        },
+        {
+          "name": "契机",
+          "value": 2
+        },
+        {
+          "name": "影响",
+          "value": 2
+        },
+        {
+          "name": "充分发挥",
+          "value": 2
+        },
+        {
+          "name": "带动",
+          "value": 2
+        }
+      ]
+    }
+  ]
+}

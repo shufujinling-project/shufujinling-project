@@ -1,0 +1,87 @@
+{
+  "title": {
+    "text": "邮电业务增长状况",
+    "top": 10,
+    "left": "center",
+    "textStyle": {
+      "fontSize": 20,
+      "color": "#fff",
+      "textShadowColor": "rgba(0,0,0,0.5)",
+      "textShadowBlur": 6
+    }
+  },
+  "backgroundColor": "rgba(255,255,255,0.1)",
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": { "type": "shadow" },
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#7cffb2",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "grid": { "left": "3%", "right": "10%", "bottom": "3%", "containLabel": true },
+  "xAxis": {
+    "type": "category",
+    "name": "年份",
+    "data": ["2014","2015","2016","2017","2018","2019","2020"],
+    "axisLine": { "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisTick": { "alignWithLabel": true, "lineStyle": { "color": "rgba(255,255,255,0.6)" } },
+    "axisLabel": { "interval": 0, "color": "rgba(255,255,255,0.8)" }
+  },
+  "yAxis": {
+    "type": "value",
+    "name": "总量(亿元)",
+    "axisLine": { "show": false },
+    "axisTick": { "show": false },
+    "splitLine": { "lineStyle": { "color": "rgba(255,255,255,0.1)" } },
+    "axisLabel": { "color": "rgba(255,255,255,0.8)" }
+  },
+  "series": [
+    {
+      "name": "",
+      "type": "bar",
+      "barWidth": "60%",
+      "data": [237.94,360.9,525.27,451.11,847.75,1259.81,1484.64],
+      "itemStyle": {
+        "borderRadius": [6, 6, 0, 0],
+        "color": {
+          "type": "linear",
+          "x": 0, "y": 0, "x2": 0, "y2": 1,
+          "colorStops": [
+            { "offset": 0, "color": "#7cffb2" },
+            { "offset": 1, "color": "#2ec4b6" }
+          ]
+        }
+      },
+      "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 12,
+          "shadowColor": "rgba(124,255,178,0.6)"
+        }
+      },
+      "animationDuration": 1200,
+      "animationEasing": "elasticOut"
+    },
+    {
+      "name": "",
+      "type": "line",
+      "data": [237.94,360.9,525.27,451.11,847.75,1259.81,1484.64],
+      "smooth": true,
+      "symbol": "circle",
+      "symbolSize": 8,
+      "lineStyle": {
+        "width": 3,
+        "color": "#fff",
+        "shadowBlur": 8,
+        "shadowColor": "rgba(255,255,255,0.4)"
+      },
+      "itemStyle": {
+        "color": "#fff",
+        "borderColor": "#7cffb2",
+        "borderWidth": 2
+      },
+      "animationDuration": 1500,
+      "animationEasing": "cubicOut"
+    }
+  ]
+}

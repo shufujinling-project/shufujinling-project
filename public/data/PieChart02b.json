@@ -1,0 +1,60 @@
+{
+  "title": { "text": "", "subtext": "", "top": 10, "left": "center" },
+  "backgroundColor": "transparent",
+  "tooltip": {
+    "trigger": "item",
+    "backgroundColor": "rgba(0,0,0,0.7)",
+    "borderColor": "#3498db",
+    "borderWidth": 1,
+    "textStyle": { "color": "#fff" }
+  },
+  "legend": {
+    "show": true,
+    "top": "center",
+    "orient": "vertical",
+    "left": "left",
+    "textStyle": { "color": "rgba(255,255,255,0.9)", "fontSize": 14 },
+    "itemWidth": 14,
+    "itemHeight": 14,
+    "itemGap": 12
+  },
+  "series": [
+    {
+      "name": "政务服务中心",
+      "type": "pie",
+      "radius": ["30%", "60%"],
+      "center": ["70%", "50%"],
+      "label": {
+        "show": true,
+        "position": "outside",
+        "formatter": "{b}\n{c}",
+        "fontSize": 12,
+        "color": "#fff",
+        "fontWeight": "bold"
+      },
+      "labelLine": { "show": true, "length": 15, "length2": 10 },
+      "itemStyle": {
+        "borderRadius": 8,
+        "borderColor": "#fff",
+        "borderWidth": 2
+      },
+      "data": [
+        { "name": "市级政务服务中心", "value": 4, "itemStyle": { "color": "#06D6A0" } },
+        { "name": "区级政务服务中心", "value": 16, "itemStyle": { "color": "#FF8C42" } },
+        { "name": "县级政务服务中心", "value": 39, "itemStyle": { "color": "#FFD166" } },
+        { "name": "便利服务中心", "value": 1205, "itemStyle": { "color": "#EF476F" } }
+      ],
+      "emphasis": {
+        "scale": 1.12,
+        "itemStyle": {
+          "shadowBlur": 20,
+          "shadowOffsetX": 0,
+          "shadowColor": "rgba(0,0,0,0.5)"
+        }
+      },
+      "animationType": "scale",
+      "animationDuration": 1500,
+      "animationEasing": "elasticOut"
+    }
+  ]
+}
